@@ -26,4 +26,10 @@ def sort_array_char_count(array_strings)
       1
     end
   end
-end          
+end
+
+def swap_elements(array, index, destination_index)
+  array.sort do |index, destination_index|
+    index <=> destination_index
+  end
+end
