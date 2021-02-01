@@ -29,13 +29,5 @@ def sort_array_char_count(array_strings)
 end
 
 def swap_elements(array, index, destination_index)
-  array.sort do |index, destination_index|
-    if index == 0
-    0
-  elsif index == 1
-      1
-    elsif index == 2
-      -1
-  end
-end
+  array[index], array[destination_index] = array[destination_index], array[index]
 end
