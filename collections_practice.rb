@@ -12,6 +12,18 @@ def sort_array_desc(array)
       -1
     elsif num1 < num2
       1
+    end
   end
 end
-end
+
+def sort_array_char_count(array_strings)
+  array_strings.sort do |char1, char2|
+    if char1.length == char2.length
+      0
+    elsif char1.length < char2.length
+      -1
+    elsif char1.length > char2.length
+      1
+    end
+  end
+end          
