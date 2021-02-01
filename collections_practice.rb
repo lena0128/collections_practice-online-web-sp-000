@@ -32,9 +32,10 @@ def swap_elements(array, index, destination_index)
   array.sort do |index, destination_index|
     if index == 0
     0
-    if index == 1
+  elsif index == 1
       1
-    if index == 2
+    elsif index == 2
       -1
   end
+end
 end
