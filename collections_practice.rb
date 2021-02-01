@@ -30,6 +30,6 @@ end
 
 def swap_elements(array, index, destination_index)
   array.sort do |index, destination_index|
-    index <=> destination_index
+    array[index] <=> array[destination_index]
   end
 end
