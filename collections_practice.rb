@@ -29,7 +29,7 @@ def sort_array_char_count(array_strings)
 end
 
 def swap_elements(array, index, destination_index)
-  array.sort do |array[index], array[destination_index] |
+  array.sort do | array[index], array[destination_index] |
     array[index] <=> array[destination_index]
   end
 end
